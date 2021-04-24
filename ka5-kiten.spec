@@ -1,15 +1,15 @@
-%define		kdeappsver	20.12.3
+%define		kdeappsver	21.04.0
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		kiten
 Summary:	kiten
 Name:		ka5-%{kaname}
-Version:	20.12.3
+Version:	21.04.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	d781878bfc4041873d8cf2edd43d6b6c
+# Source0-md5:	b529f18c9c86cda14cadbeea05aab997
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
@@ -82,8 +82,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/kitengen
 %attr(755,root,root) %{_bindir}/kitenkanjibrowser
 %attr(755,root,root) %{_bindir}/kitenradselect
-%attr(755,root,root) %ghost %{_libdir}/libkiten.so.5
-%attr(755,root,root) %{_libdir}/libkiten.so.5.*.*
+%ghost %{_libdir}/libkiten.so.5
+%attr(755,root,root) %{_libdir}/libkiten.so.*.*.*
 %{_desktopdir}/org.kde.kiten.desktop
 %{_desktopdir}/org.kde.kitenkanjibrowser.desktop
 %{_desktopdir}/org.kde.kitenradselect.desktop
@@ -106,4 +106,4 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %{_includedir}/libkiten
-%attr(755,root,root) %{_libdir}/libkiten.so
+%{_libdir}/libkiten.so
