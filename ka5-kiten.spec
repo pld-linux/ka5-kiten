@@ -39,6 +39,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Kiten is a Japanese reference/study tool.
 
+%description -l pl.UTF-8
+Kiten jest narzędziem do nauki japońskiego.
+
 %package devel
 Summary:	Header files for %{kaname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kaname}
