@@ -1,15 +1,15 @@
-%define		kdeappsver	21.04.3
+%define		kdeappsver	21.08.0
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		kiten
 Summary:	kiten
 Name:		ka5-%{kaname}
-Version:	21.04.3
+Version:	21.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	6a6d35f211411ebdaa2a0696c0fba382
+# Source0-md5:	27113bfdacdc251785d826c0a9a26c9d
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
